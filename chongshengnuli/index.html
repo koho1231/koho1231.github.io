@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="冲绳奴隶岛专题站 - 提供关于冲绳历史背景、奴隶制度起源、琉球王国社会结构及文化影响的深度资料与历史研究。">
+    <meta name="keywords" content="冲绳奴隶岛, 琉球奴隶制, 琉球王国历史, 冲绳历史, 南岛征服">
+    <title>冲绳奴隶岛 - 琉球王国奴隶制度历史研究与文化探源</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #2F4F4F;
+            --accent-color: #CD853F;
+            --bg-color: #Fdfbf7;
+            --text-color: #333;
+            --light-text: #666;
+            --border-color: #e0e0e0;
+            --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/okinawa_history/1600/900.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        /* Article Content */
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--light-text);
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        .article-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .article-content li {
+            margin-bottom: 10px;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            display: flex;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-date {
+            min-width: 120px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .timeline-content {
+            padding-left: 20px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-content p {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            margin-bottom: 0;
+        }
+
+        /* Sidebar */
+        .sidebar-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .fact-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .fact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .fact-title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .fact-desc {
+            font-size: 0.9rem;
+            color: var(--light-text);
+        }
+
+        /* Table */
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f9f9f9;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #fafafa;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            margin-top: 15px;
+            color: var(--light-text);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: #ccc;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                height: 400px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-date {
+                min-width: 100px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">冲绳<span>奴隶岛</span></a>
+        <nav>
+            <ul>
+                <li><a href="#overview">历史概述</a></li>
+                <li><a href="#mechanism">制度机制</a></li>
+                <li><a href="#timeline">历史时间轴</a></li>
+                <li><a href="#legacy">历史遗留</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>冲绳奴隶岛：琉球王国的底层历史</h1>
+        <p>深入探究琉球王国时期（1429-1879）的社会结构，解析“南岛征服”带来的奴隶制度，以及这一历史现象对冲绳文化与社会形态的深远影响。</p>
+        <a href="#overview" class="btn">阅读历史资料</a>
+    </div>
+</div>
+
+<main class="container">
+    <div class="main-grid">
+        <!-- Left Column: Main Content -->
+        <div class="content-area">
+            <section id="overview">
+                <h2 class="section-title">历史概述</h2>
+                <div class="article-content">
+                    <p>“冲绳奴隶岛”这一说法通常指代琉球王国历史上存在的奴隶制度。琉球王国位于中国东海和太平洋之间，曾长期作为中国的藩属国，同时也与日本本土及东南亚国家保持贸易往来。在其长达数百年的历史中，奴隶制是社会经济结构的重要组成部分。</p>
+                    <p>这一制度并非外界想象中的“野蛮捕猎”，而是通过战争、债务、刑罚等多种形式产生的。在琉球历史上，奴隶被称为“シヤチュー”（Sazau，意为“生人”或“俘虏”），主要来源包括战争俘虏、被贬官员以及因贫困而出售自身或家人的平民。</p>
+                </div>
+            </section>
+
+            <section id="mechanism">
+                <h2 class="section-title">奴隶制度的运作机制</h2>
+                <div class="article-content">
+                    <p>琉球的奴隶制有着严格的等级划分和管理体系。奴隶并非完全没有人身自由，他们通常依附于特定的领主或寺庙，从事农业生产、家务劳动或手工艺工作。</p>
+                    <ul>
+                        <li><strong>来源分类：</strong> 主要分为“戦俘奴隶”（战争俘虏）和“平民奴隶”（因债务或犯罪沦为奴隶）。</li>
+                        <li><strong>社会地位：</strong> 奴隶在社会阶层中处于最底层，被称为“三等民”。然而，与同时期的东亚其他地区相比，琉球的奴隶制度在某些时期表现出一定的灵活性，奴隶可以通过赎身、立功或特定仪式获得解放。</li>
+                        <li><strong>经济功能：</strong> 奴隶是琉球王国农业和渔业生产的重要劳动力，特别是在萨摩藩入侵和统治时期，奴隶被广泛用于矿山开发和基础设施建设。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="timeline">
+                <h2 class="section-title">历史演变时间轴</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">14世纪末</div>
+                        <div class="timeline-content">
+                            <h4>南岛征服</h4>
+                            <p>尚氏家族统一琉球诸岛，开始对外扩张，大量战俘成为早期的奴隶来源。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1609年</div>
+                        <div class="timeline-content">
+                            <h4>萨摩藩入侵</h4>
+                            <p>日本萨摩藩入侵琉球，俘虏了大量琉球人，并将他们带回鹿儿岛作为奴隶（“薩摩流人”）。这是冲绳奴隶制历史上最黑暗的时期之一。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1879年</div>
+                        <div class="timeline-content">
+                            <h4>琉球处分</h4>
+                            <p>日本明治政府废除琉球王国，设立冲绳县。随着现代法律体系的建立，传统的奴隶制度在法律上被彻底废除。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column: Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3>历史关键词</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">南岛征服</a>
+                    <a href="#" class="tag">萨摩藩</a>
+                    <a href="#" class="tag">琉球王国</a>
+                    <a href="#" class="tag">三等民</a>
+                    <a href="#" class="tag">奴隶解放</a>
+                    <a href="#" class="tag">冲绳历史</a>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>历史冷知识</h3>
+                <div class="fact-item">
+                    <span class="fact-title">奴隶的称呼</span>
+                    <span class="fact-desc">琉球奴隶被称为“シヤチュー”（Sazau），字面意思近似“生人”或“俘虏”。</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-title">赎身制度</span>
+                    <span class="fact-desc">琉球社会存在较为普遍的赎身习俗，奴隶可以通过积蓄或家庭资助赎回自由身。</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-title">萨摩流人</span>
+                    <span class="fact-desc">1609年萨摩入侵后，约有数千名琉球贵族和平民被带回日本本土，成为萨摩藩的奴隶或家臣。</span>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>相关历史文献</h3>
+                <ul style="font-size: 0.9rem; color: var(--light-text);">
+                    <li style="margin-bottom: 10px;"><a href="#">《中山世鉴》记载</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#">琉球王国史研究</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#">冲绳奴隶制考据</a></li>
+                    <li><a href="#">近世琉球社会结构</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <section id="faq">
+        <h2 class="section-title">常见问题解答 (FAQ)</h2>
+        <div class="faq-item">
+            <div class="faq-question">琉球奴隶制的起源是什么？</div>
+            <div class="faq-answer">主要起源于“南岛征服”战争，尚氏家族在统一琉球诸岛的过程中俘获了大量战俘，这些战俘成为了最早的奴隶群体。此外，因债务、犯罪或家庭贫困而沦为奴隶的情况也长期存在。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">冲绳现在的文化中有奴隶制的影子吗？</div>
+            <div class="faq-answer">虽然法律上的奴隶制已被废除，但在琉球王国的历史记忆中，这一制度对社会等级和亲属关系产生了一定影响。不过，现代冲绳社会主要传承的是其独特的岛国文化，而非奴隶制度本身。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">萨摩入侵对冲绳奴隶制有什么影响？</div>
+            <div class="faq-answer">萨摩藩入侵（1609年）是冲绳历史上的转折点。萨摩藩不仅控制了琉球的外交权，还将大量琉球人作为奴隶带回鹿儿岛（称为“萨摩流人”），这极大地改变了琉球的人口结构和奴隶来源。</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>关于本站</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6;">
+                    本站致力于提供关于琉球王国历史及冲绳奴隶制度的客观资料。我们尊重历史事实，反对任何形式的暴力与剥削。本站内容仅供学术研究与历史参考。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#overview">历史概述</a></li>
+                    <li><a href="#mechanism">制度机制</a></li>
+                    <li><a href="#timeline">历史时间轴</a></li>
+                    <li><a href="#legacy">历史遗留</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关资源</h4>
+                <ul>
+                    <li><a href="#">琉球王国官方档案</a></li>
+                    <li><a href="#">冲绳县立博物馆</a></li>
+                    <li><a href="#">历史文献数据库</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 琉球历史研究资料站. All Rights Reserved. 仅供学术参考，非商业用途。</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ Toggle Logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+          </html>
