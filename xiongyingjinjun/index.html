@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="雄鹰进军 - 专业军事训练与户外拓展平台。提供野外生存、战术演练、团队凝聚力建设及军事化管理咨询服务。">
+    <meta name="keywords" content="雄鹰进军, 军事训练, 户外拓展, 团队建设, 战术演练, 野外生存">
+    <title>雄鹰进军 - 专业军事训练与团队拓展服务</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a4f2a;
+            --secondary-color: #d4af37;
+            --accent-color: #c0392b;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --max-width: 1200px;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #145a32;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 79, 42, 0.8), rgba(26, 79, 42, 0.6)), url('https://picsum.photos/seed/military_hero/1920/1080.jpg') no-repeat center center/cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(26, 79, 42, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 30px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+        }
+
+        /* Programs Section */
+        .programs {
+            background-color: var(--white);
+            padding: 80px 20px;
+        }
+
+        .programs-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .program-card {
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .program-card:hover {
+            box-shadow: var(--shadow);
+        }
+
+        .program-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .program-content {
+            padding: 25px;
+        }
+
+        .program-tag {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .program-content h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .program-content p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .program-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 20px;
+        }
+
+        .stats-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .stat-item p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #f0f4f0, #e8e8e8);
+        }
+
+        .cta-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 50px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .cta-box h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            display: flex;
+            gap: 10px;
+            max-width: 600px;
+            margin: 30px auto 0;
+            flex-wrap: wrap;
+        }
+
+        .form-input {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-width: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .program-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group {
+                flex-direction: column;
+            }
+            
+            .cta-box {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <span>★</span> 雄鹰进军
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#services">核心服务</a></li>
+                    <li><a href="#programs">定制课程</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">立即咨询</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>铸就钢铁意志，打造卓越团队</h1>
+                <p>雄鹰进军专注于企业军事化管理培训与户外拓展，通过实战化训练提升团队执行力、凝聚力和战斗力。</p>
+                <div class="hero-buttons">
+                    <a href="#programs" class="cta-btn">查看课程方案</a>
+                    <a href="#about" class="btn-outline">了解更多</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="services" class="features">
+            <div class="section-header">
+                <h2>核心服务优势</h2>
+                <p>融合现代军事训练理念与专业户外探索，为您量身定制成长方案</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="icon-box">⚔️</div>
+                    <h3>军事化训练</h3>
+                    <p>模拟真实战场环境，通过队列训练、战术演练、体能强化，培养学员严明的纪律性和坚韧的意志力。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon-box">🧭</div>
+                    <h3>野外生存挑战</h3>
+                    <p>在复杂地形中开展野外定向、露营、野炊及应急自救课程，提升团队在极端环境下的协作与生存能力。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon-box">🤝</div>
+                    <h3>团队拓展建设</h3>
+                    <p>设计高难度、高挑战的团队协作项目，打破部门壁垒，增强沟通效率，打造有战斗力的狼性团队。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="programs">
+            <div class="section-header">
+                <h2>热门定制课程</h2>
+                <p>针对不同行业与需求，提供多样化的军事训练与拓展方案</p>
+            </div>
+            <div class="programs-container">
+                <div class="program-grid">
+                    <article class="program-card">
+                        <img src="https://picsum.photos/seed/army1/400/300.jpg" alt="企业新兵训练营" class="program-img">
+                        <div class="program-content">
+                            <span class="program-tag">企业定制</span>
+                            <h3>新员工入职军事特训营</h3>
+                            <p>帮助新员工快速融入企业文化，建立规则意识，培养吃苦耐劳的精神。</p>
+                            <a href="#" class="program-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="program-card">
+                        <img src="https://picsum.photos/seed/tactical/400/300.jpg" alt="战术演练" class="program-img">
+                        <div class="program-content">
+                            <span class="program-tag">高阶课程</span>
+                            <h3>特种战术与领导力演练</h3>
+                            <p>针对中高层管理者的封闭式特训，通过模拟指挥与决策，提升领导艺术。</p>
+                            <a href="#" class="program-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="program-card">
+                        <img src="https://picsum.photos/seed/outdoor/400/300.jpg" alt="野外拉练" class="program-img">
+                        <div class="program-content">
+                            <span class="program-tag">户外拓展</span>
+                            <h3>重装野外生存拉练</h3>
+                            <p>长途跋涉与山地穿越，磨练意志，挑战自我极限，增强团队凝聚力。</p>
+                            <a href="#" class="program-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>年行业经验</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>服务企业客户</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>专业教官团队</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>满意度保障</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta-section">
+            <div class="cta-box">
+                <h2>开启您的蜕变之旅</h2>
+                <p>无论您需要提升团队士气还是强化员工素质，雄鹰进军都是您的最佳选择。</p>
+                <form class="form-group" onsubmit="event.preventDefault(); alert('感谢您的咨询，我们将尽快与您联系。');">
+                    <input type="text" class="form-input" placeholder="请输入您的姓名" required>
+                    <input type="tel" class="form-input" placeholder="请输入联系电话" required>
+                    <button type="submit" class="cta-btn">免费获取方案</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>雄鹰进军</h4>
+                <p>致力于为企业和个人提供最专业的军事化训练与户外拓展服务，打造钢铁团队，成就卓越未来。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">课程体系</a></li>
+                    <li><a href="#">客户案例</a></li>
+                    <li><a href="#">师资力量</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>服务项目</h4>
+                <ul>
+                    <li><a href="#">企业内训</a></li>
+                    <li><a href="#">军事夏令营</a></li>
+                    <li><a href="#">红色旅游</a></li>
+                    <li><a href="#">户外探险</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul>
+                    <li>电话：400-123-4567</li>
+                    <li>邮箱：contact@xiongyingjinjun.com</li>
+                    <li>地址：某市某区某路某号</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 雄鹰进军军事训练基地 版权所有</p>
+        </div>
+    </footer>
+
+</body>
+</html>
