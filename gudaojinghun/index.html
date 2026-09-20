@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="孤岛惊魂2剧情深度解析，包含剧情主线、角色背景、结局分支及核心主题探讨。">
+    <meta name="keywords" content="孤岛惊魂2剧情, 孤岛惊魂2故事背景, 孤岛惊魂2结局, 孤岛惊魂2角色介绍">
+    <title>孤岛惊魂2剧情-深度解析游戏故事背景与结局</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d9534f;
+            --secondary-color: #2c3e50;
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://picsum.photos/seed/farcry2/1600/600.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c9302c;
+        }
+
+        /* Content Layout */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: -3rem;
+            margin-bottom: 3rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        h3 {
+            margin: 1.5rem 0 0.8rem;
+            color: var(--secondary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 3px solid var(--bg-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.6rem;
+            top: 0.2rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-widget h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .character-list {
+            list-style: none;
+        }
+
+        .character-list li {
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--bg-color);
+        }
+
+        .character-list li:last-child {
+            border-bottom: none;
+        }
+
+        .character-name {
+            font-weight: bold;
+            display: block;
+        }
+
+        .character-role {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Quote Box */
+        .quote-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            font-style: italic;
+            color: var(--text-main);
+            margin: 1.5rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #bdc3c7;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">
+            <span>FC2</span> 剧情解析
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#overview">游戏概览</a></li>
+                <li><a href="#storyline">故事主线</a></li>
+                <li><a href="#characters">角色介绍</a></li>
+                <li><a href="#themes">核心主题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="container">
+        <h1>孤岛惊魂2剧情深度解析</h1>
+        <p>探索非洲大地的混乱、背叛与生存。本文将详细剖析《孤岛惊魂2》的完整故事背景、支线任务关联及开放式结局的深层含义。</p>
+        <a href="#storyline" class="btn">开始阅读剧情</a>
+    </div>
+</div>
+
+<main class="container">
+    <div class="content-grid">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section id="overview">
+                <h2>游戏概览</h2>
+                <p><strong>《孤岛惊魂2》</strong>由育碧蒙特利尔工作室开发，背景设定在一个虚构的非洲国家“法尔科”。故事发生在内战爆发后的混乱时期，玩家将扮演一名身份不明的雇佣兵，潜入该国执行任务。与前作相比，本作强调“混乱”与“信任”的主题，玩家没有固定的主线任务目标，而是通过与其他派系的互动来推动故事发展。</p>
+                <div class="quote-box">
+                    “在这个该死的地方，没有朋友，只有幸存者。” —— 游戏内的核心旁白基调
+                </div>
+            </section>
+
+            <section id="storyline">
+                <h2>故事主线与时间线</h2>
+                <h3>1. 入侵与觉醒</h3>
+                <p>玩家在游戏开始时处于昏迷状态，被一名自称“约翰·马尔斯”的神秘男子救起。马尔斯告知玩家，他们被一支名为“文明者”的雇佣兵团入侵，而玩家被赋予了代号“火狐”。玩家必须前往法尔科，加入当地军阀“复仇天使”或“革命军”来对抗文明者。</p>
+                
+                <h3>2. 混乱蔓延</h3>
+                <p>随着玩家的行动，法尔科的局势日益恶化。原本对立的派系开始联合起来，试图消灭入侵者。玩家在旅途中会发现，文明者并非单纯的入侵者，他们试图通过病毒武器来控制整个大陆，这种极端的干预反而激起了更强烈的反抗。</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-year">游戏开始</span>
+                        <p>玩家苏醒，马尔斯建立信任，目标确立：消灭文明者。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">中期发展</span>
+                        <p>玩家深入敌后，发现各方势力都在利用病毒，局势失控。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">终局</span>
+                        <p>玩家抵达文明者基地，面对最终的抉择。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="characters">
+                <h2>关键角色分析</h2>
+                <h3>约翰·马尔斯</h3>
+                <p>马尔斯是玩家在游戏中最信任的向导，但他始终戴着面具，从未露面。根据游戏内的线索和对话分析，马尔斯极有可能是玩家在游戏开始前已故的搭档，或者是被玩家潜意识操控的傀儡。他在玩家耳边低语，引导玩家走向毁灭。</p>
+                
+                <h3>文明者首领</h3>
+                <p>作为最终反派，文明者首领代表了一种傲慢的秩序。他们试图用绝对的力量和病毒来“拯救”非洲，却完全忽视了当地的文化和人民的意愿。他的行为加剧了悲剧色彩。</p>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>派系势力</h3>
+                <ul class="character-list">
+                    <li>
+                        <span class="character-name">复仇天使</span>
+                        <span class="character-role">军阀 - 专注于杀戮与控制</span>
+                    </li>
+                    <li>
+                        <span class="character-name">革命军</span>
+                        <span class="character-role">游击队 - 热爱自由与抵抗</span>
+                    </li>
+                    <li>
+                        <span class="character-name">文明者</span>
+                        <span class="character-role">入侵者 - 科技与病毒的掌控者</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>剧情提示</h3>
+                <p style="font-size: 0.9rem; color: #666;">
+                    注意观察游戏中的电台广播和海报。马尔斯的声音并非来自外部，而是植入在玩家脑海中的。所有派系的武器都带有特定的标志，收集它们可以解锁特殊装备。
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <section id="themes">
+        <h2>核心主题：信任与混乱</h2>
+        <p>《孤岛惊魂2》的剧情设计非常独特，它打破了传统FPS游戏的线性叙事。游戏通过第一人称视角和碎片化的信息，让玩家自己去拼凑真相。</p>
+        <p><strong>信任的崩塌：</strong> 游戏中几乎没有人值得完全信赖。马尔斯的谎言、军阀的背叛、平民的冷漠，都在不断挑战玩家的道德底线。玩家会发现，所谓的“任务”往往只是更大的阴谋的一部分。</p>
+        <p><strong>混乱的艺术：</strong> 游戏中的世界是一个不断自我演化的系统。玩家的每一个选择都会引发连锁反应，无论是帮助哪个派系，都会导致局势的进一步恶化。这种设计迫使玩家在混乱中寻找生存之道。</p>
+    </section>
+
+    <section id="faq">
+        <h2>常见问题 (FAQ)</h2>
+        <h3>Q: 马尔斯是谁？</h3>
+        <p>A: 马尔斯的身份是《孤岛惊魂2》剧情最大的谜团。他可能是玩家已故的搭档，也可能是玩家在精神崩溃状态下产生的幻觉。无论真相如何，他的存在推动了玩家的行动。</p>
+        
+        <h3>Q: 有多个结局吗？</h3>
+        <p>A: 是的，游戏有多个结局。结局取决于玩家在最后阶段与哪个派系建立了足够的信任度。通常情况下，彻底消灭文明者是达成“胜利”结局的必要条件，但过程会因选择而异。</p>
+
+        <h3>Q: 游戏故事发生在哪一年？</h3>
+        <p>A: 游戏内的时间设定并不明确，但根据游戏中的科技水平、政治局势以及马尔斯提到的“二十年前”的背景，大致可以推测故事发生在21世纪初。</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 孤岛惊魂2剧情解析站. 仅供游戏爱好者交流与剧情探讨使用。</p>
+        <p>本站内容基于游戏官方设定整理，非官方网站。</p>
+    </div>
+</footer>
+
+</body>
+</html>
