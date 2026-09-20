@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="教堂婚礼全流程指南：从婚礼策划、仪式流程、誓词选择到场地预订的实用建议，帮助新人打造神圣浪漫的西式婚礼。">
+    <meta name="keywords" content="教堂婚礼流程,西式婚礼,婚礼策划,教堂婚礼誓词,婚礼仪式">
+    <title>教堂婚礼流程-神圣浪漫的西式婚礼全攻略与执行指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #4a3b32;
+            --secondary-color: #8c7b70;
+            --accent-color: #d4af37;
+            --bg-color: #f9f7f5;
+            --text-color: #333;
+            --light-text: #666;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white) !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--white) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://picsum.photos/seed/churchwedding/1920/1080.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 12px 35px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            background-color: #bfa030;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--light-text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Timeline Steps */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: var(--accent-color);
+            opacity: 0.3;
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+            transform: translateX(50%);
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            width: 85%;
+            position: relative;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            right: -8px;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background-color: var(--accent-color);
+            border: 4px solid var(--white);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .timeline-item:nth-child(even) .timeline-marker {
+            right: auto;
+            left: -8px;
+        }
+
+        .timeline-time {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .timeline-content h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Tips Grid */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tip-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .tip-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tip-card ul {
+            padding-left: 20px;
+        }
+
+        .tip-card li {
+            margin-bottom: 8px;
+            color: var(--light-text);
+            list-style-type: disc;
+        }
+
+        /* Vows Section */
+        .vows-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .vows-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .vows-text h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .vows-text p {
+            margin-bottom: 15px;
+            color: var(--light-text);
+        }
+
+        .vows-example {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f4f1ea;
+            padding: 25px;
+            border-radius: var(--border-radius);
+        }
+
+        .vows-example h4 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .vows-example blockquote {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+            font-family: "Georgia", serif;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: var(--primary-color);
+            background-color: #fff;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--light-text);
+            display: none;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--accent-color);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #ccc;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                justify-content: flex-start !important;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+                transform: none !important;
+            }
+
+            .timeline-marker {
+                left: 12px !important;
+                right: auto !important;
+            }
+
+            .timeline-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                Wedding<span>Guide</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#process">仪式流程</a></li>
+                    <li><a href="#tips">筹备建议</a></li>
+                    <li><a href="#vows">誓词参考</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#" class="cta-btn">预约咨询</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>教堂婚礼流程：打造神圣浪漫的西式婚礼</h1>
+                <p>从入场、祷告到交换戒指，一份详尽的教堂婚礼执行指南，助您完美呈现这一生中最神圣的时刻。</p>
+                <a href="#process" class="hero-btn">查看详细流程</a>
+            </div>
+        </section>
+
+        <!-- Process Timeline -->
+        <section id="process" class="container">
+            <div class="section-title">
+                <h2>标准仪式流程</h2>
+                <p>教堂婚礼通常比普通婚礼更庄重，以下为一般流程安排，具体时间可根据场地和时长调整。</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">10-15分钟前</span>
+                        <h3>新郎与伴郎准备</h3>
+                        <p>新郎在祭坛后方等候，伴郎在侧翼协助整理礼服、检查戒指。新娘在化妆间由伴娘整理婚纱、补妆，并拍摄准备照。</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">仪式开始前</span>
+                        <h3>宾客入场与祷告</h3>
+                        <p>新郎父亲带领宾客进入教堂，牧师或神父进行开场祷告。此时，新郎由父亲带领走向祭坛，新娘由父亲挽手走向新郎。</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">仪式进行中</span>
+                        <h3>誓言与誓词</h3>
+                        <p>双方宣读誓词，交换戒指。这是婚礼的核心环节，通常在神父的主持下进行，表达对彼此的承诺。</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">仪式结束</span>
+                        <h3>宣布与退场</h3>
+                        <p>神父宣布“现在，你们可以交换戒指了”或宣布两人结为夫妻。随后，新郎亲吻新娘，在欢呼声中退场。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" style="background-color: #fff;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>教堂婚礼筹备建议</h2>
+                    <p>为了让仪式顺利进行，以下几点准备工作至关重要。</p>
+                </div>
+
+                <div class="tips-grid">
+                    <article class="tip-card">
+                        <h3>场地与着装</h3>
+                        <ul>
+                            <li><strong>着装要求：</strong>教堂通常要求女性着裙装，男性需穿长裤和正装，避免穿着短裤、背心或拖鞋。</li>
+                            <li><strong>场地预订：</strong>热门教堂需提前数月甚至半年预订，确认是否允许使用专业摄影师和摄像设备。</li>
+                            <li><strong>音乐许可：</strong>部分教堂对背景音乐有严格限制，需提前提交歌单并确认是否需要购买版权。</li>
+                        </ul>
+                    </article>
+
+                    <article class="tip-card">
+                        <h3>流程与排练</h3>
+                        <ul>
+                            <li><strong>提前彩排：</strong>务必参加场地彩排，熟悉走位、跪垫的位置以及牧师的指令。</li>
+                            <li><strong>誓词确认：</strong>将誓词打印出来交给神父，并确认是否有特定的宗教用语要求。</li>
+                            <li><strong>宾客引导：</strong>安排专人负责引导宾客入座，确保仪式开始前全场安静。</li>
+                        </ul>
+                    </article>
+
+                    <article class="tip-card">
+                        <h3>摄影与摄像</h3>
+                        <ul>
+                            <li><strong>设备限制：</strong>部分教堂禁止使用闪光灯和三脚架，需提前了解场地规定。</li>
+                            <li><strong>最佳机位：</strong>摄影师应提前勘景，寻找最佳拍摄角度，避免阻挡宾客视线。</li>
+                            <li><strong>抓拍时刻：</strong>注意捕捉交换戒指、亲吻以及神父宣布那一刻的特写。</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vows Section -->
+        <section id="vows" class="container">
+            <div class="section-title">
+                <h2>经典誓词参考</h2>
+                <p>无论选择宗教誓词还是现代誓词，真诚的表达最能打动人心。</p>
+            </div>
+
+            <div class="vows-container">
+                <div class="vows-text">
+                    <h3>选择誓词的注意事项</h3>
+                    <p>教堂婚礼通常建议使用宗教誓词，因为这是对宗教信仰的尊重。如果您选择非宗教誓词，请务必提前与神父沟通并获得许可。</p>
+                    <p>现代誓词更加自由，允许新人加入个人经历和承诺，但需注意语气温和庄重，避免过于随意的表达。</p>
+                </div>
+                <div class="vows-example">
+                    <h4>传统宗教誓词（示例）</h4>
+                    <blockquote>
+                        “我，[新郎/新娘名]，愿娶/嫁你为妻/夫。从今以后，无论顺境或逆境，富裕或贫穷，健康或疾病，快乐或忧愁，我都将爱护你、珍惜你，直到天长地久。”
+                    </blockquote>
+                    <h4>现代誓词（示例）</h4>
+                    <blockquote>
+                        “亲爱的，我承诺在你身边，做你最坚实的依靠。我承诺包容你的缺点，分享你的快乐，并在未来的每一天里，更加爱你。”
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="background-color: #fff;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                    <p>关于教堂婚礼流程的常见疑问与解答。</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>教堂婚礼可以自己写誓词吗？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>这取决于教堂的规定和神父的态度。大多数教堂接受现代誓词，但必须提前与神父沟通并获得书面或口头许可。宗教誓词通常更受推荐。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>教堂对婚纱有长度或款式要求吗？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>教堂一般要求裙摆不能过长拖地，以免绊倒新人，通常建议裙长不超过脚踝。款式上应保持庄重、优雅，避免过于暴露或前卫的设计。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>婚礼当天可以带化妆师和造型师进入教堂吗？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>通常情况下，只有新娘、新郎、伴娘、伴郎、花童以及必要的摄影师和摄像师可以进入仪式区域。造型师和化妆师通常在仪式开始前完成工作后离开。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>WeddingGuide</h4>
+                <p>专注于为新人提供专业、实用的婚礼策划指南与流程参考，让您的婚礼梦想成真。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#process">仪式流程</a></li>
+                    <li><a href="#tips">筹备建议</a></li>
+                    <li><a href="#vows">誓词参考</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关服务</h4>
+                <ul>
+                    <li><a href="#">婚礼场地预订</a></li>
+                    <li><a href="#">专业摄影师推荐</a></li>
+                    <li><a href="#">婚纱礼服租赁</a></li>
+                    <li><a href="#">婚礼策划咨询</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 教堂婚礼流程指南. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Script
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                          </html>
