@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="巴宝利官方资讯、经典格纹系列介绍、男装与女装最新款式展示，以及品牌历史与官方购买渠道指南。">
+    <meta name="keywords" content="巴宝利, Burberry, 格纹, 男装, 女装, 风衣, 英国品牌">
+    <title>巴宝利 - 经典英伦格纹与绅士风范展示</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --burberry-red: #B8261F;
+            --burberry-black: #1A1A1A;
+            --burbery-grey: #F4F4F4;
+            --text-main: #333333;
+            --text-light: #666666;
+            --font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-main);
+            background-color: #fff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Utility */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--burberry-red);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #961c17;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--burberry-black);
+            color: var(--burberry-black);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--burberry-black);
+            color: white;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav-top {
+            background-color: var(--burberry-black);
+            color: white;
+            font-size: 12px;
+            padding: 8px 0;
+        }
+
+        .nav-top .container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .nav-top a:hover {
+            color: #ccc;
+        }
+
+        .main-nav {
+            padding: 20px 0;
+        }
+
+        .main-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-main);
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover {
+            color: var(--burberry-red);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background-color: #000;
+            color: white;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            /* Placeholder for a fashion image */
+            background: url('https://picsum.photos/seed/burberryhero/1920/1080') no-repeat center center/cover;
+            filter: grayscale(30%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 4px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: #ddd;
+        }
+
+        /* Category Grid */
+        .categories {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .section-title span {
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--burberry-red);
+            margin: 0 auto;
+        }
+
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .cat-card {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            group: cursor-pointer;
+        }
+
+        .cat-card img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s ease;
+        }
+
+        .cat-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .cat-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: white;
+        }
+
+        .cat-overlay h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .cat-overlay p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Brand Story */
+        .story {
+            padding: 80px 0;
+            background-color: var(--burbery-grey);
+        }
+
+        .story-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--burberry-black);
+        }
+
+        .story-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        .story-image {
+            flex: 1;
+            height: 500px;
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Featured Products */
+        .products {
+            padding: 80px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background: white;
+        }
+
+        .product-image {
+            position: relative;
+            padding-bottom: 120%; /* Aspect ratio for fashion */
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .product-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .product-info {
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 16px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .product-price {
+            color: var(--burberry-red);
+            font-weight: 700;
+        }
+
+        /* History Timeline */
+        .timeline {
+            padding: 80px 0;
+            background-color: var(--burberry-black);
+            color: white;
+        }
+
+        .timeline .section-title h2 {
+            color: white;
+        }
+
+        .timeline-list {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .timeline-list::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255,255,255,0.2);
+            z-index: 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            width: 20%;
+        }
+
+        .timeline-year {
+            background-color: var(--burberry-black);
+            border: 1px solid rgba(255,255,255,0.3);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: 700;
+        }
+
+        .timeline-content {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f8f8;
+            padding: 60px 0 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--burberry-red);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .story-content {
+                flex-direction: column;
+            }
+
+            .story-image {
+                width: 100%;
+                height: 300px;
+            }
+
+            .timeline-list {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .timeline-list::before {
+                display: none;
+            }
+
+            .timeline-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .timeline-year {
+                margin: 0;
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-top">
+            <div class="container">
+                <a href="#">官方网站</a>
+                <a href="#">会员登录</a>
+                <a href="#">帮助中心</a>
+            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container">
+                <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+                <div class="logo">Burberry</div>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#">男装</a>
+                    <a href="#">女装</a>
+                    <a href="#">配饰</a>
+                    <a href="#">香水</a>
+                    <a href="#">童装</a>
+                    <a href="#">品牌故事</a>
+                </nav>
+                <a href="#" class="btn btn-primary" style="padding: 8px 20px; font-size: 12px;">立即选购</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>英伦经典，传承百年</h1>
+                <p>探索巴宝利标志性的格纹与精湛工艺，体验永恒的绅士风范。</p>
+                <div style="display: flex; gap: 15px; justify-content: center;">
+                    <a href="#" class="btn btn-primary">探索男装系列</a>
+                    <a href="#" class="btn btn-outline" style="border-color: white; color: white;">探索女装系列</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="section-title">
+                    <h2>精选系列</h2>
+                    <span></span>
+                </div>
+                <div class="cat-grid">
+                    <div class="cat-card">
+                        <img src="https://picsum.photos/seed/burberrycasual/600/800" alt="休闲系列">
+                        <div class="cat-overlay">
+                            <h3>休闲系列</h3>
+                            <p>舒适与风格的完美平衡</p>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://picsum.photos/seed/burberrycasual2/600/800" alt="正装系列">
+                        <div class="cat-overlay">
+                            <h3>正装系列</h3>
+                            <p>商务场合的得体选择</p>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://picsum.photos/seed/burberryacc/600/800" alt="配饰系列">
+                        <div class="cat-overlay">
+                            <h3>配饰系列</h3>
+                            <p>细节之处彰显品味</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story -->
+        <section class="story">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>源自泰特伯里的英伦传奇</h2>
+                        <p>巴宝利（Burberry）始于1856年，由托马斯·巴宝利在英国南部小镇泰特伯里创立。最初，品牌以生产高品位的户外雨衣起家，凭借其创新的华达呢面料和标志性的格纹设计，逐渐成为英国皇室御用品牌。</p>
+                        <p>从查尔斯王子到凯特王妃，巴宝利的格纹象征着传统的英伦贵族气质与现代时尚的完美融合。每一件产品都承载着品牌对精湛工艺和品质生活的执着追求。</p>
+                        <a href="#" class="btn btn-outline">了解更多品牌历史</a>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://picsum.photos/seed/burberryhistory/800/1000" alt="品牌历史展示">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>当季热销</h2>
+                    <span></span>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/trenchcoat/400/500" alt="经典格纹风衣">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">经典格纹风衣</div>
+                            <div class="product-price">¥ 18,900</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/scarf/400/500" alt="羊绒围巾">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">经典格纹羊绒围巾</div>
+                            <div class="product-price">¥ 4,500</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/bag/400/500" alt="手提包">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">格纹印花手提包</div>
+                            <div class="product-price">¥ 8,900</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/shoes/400/500" alt="皮鞋">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">绅士皮鞋</div>
+                            <div class="product-price">¥ 5,600</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="timeline">
+            <div class="container">
+                <div class="section-title">
+                    <h2>品牌历程</h2>
+                    <span></span>
+                </div>
+                <div class="timeline-list">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1856</div>
+                        <div class="timeline-content">托马斯·巴宝利在泰特伯里创立品牌，开始生产雨衣。</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1920</div>
+                        <div class="timeline-content">巴宝利格纹成为品牌标志，被广泛认知。</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1955</div>
+                        <div class="timeline-content">荣获伊丽莎白二世女王授予的皇家认证。</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1989</div>
+                        <div class="timeline-content">品牌进入中国市场，开启全球化发展。</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">任命Christopher Bailey为创意总监，引领品牌进入新纪元。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">可持续发展</a></li>
+                        <li><a href="#">投资者关系</a></li>
+                        <li><a href="#">招贤纳士</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="#">在线订购</a></li>
+                        <li><a href="#">配送信息</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">小红书</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>订阅资讯</h4>
+                    <p style="font-size: 13px; color: #999; margin-bottom: 10px;">订阅以获取最新产品资讯与独家优惠。</p>
+                    <input type="email" placeholder="输入您的邮箱" style="width: 100%; padding: 8px; border: 1px solid #ccc; margin-bottom: 10px;">
+                    <button class="btn btn-primary" style="width: 100%; font-size: 12px;">订阅</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Burberry Limited. All rights reserved. 隐私政策 | 条款与条件 | 网站地图</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
