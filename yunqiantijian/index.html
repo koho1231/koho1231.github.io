@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="孕前体检项目全面指南，涵盖血常规、TORCH筛查、口腔检查、优生优育检查及遗传病筛查等关键项目。提供科学的备孕检查流程、注意事项及医院选择建议，帮助准父母为孕育健康宝宝做好充分准备。">
+    <meta name="keywords" content="孕前体检项目,备孕检查,优生优育,Torch检查,孕前筛查">
+    <title>孕前体检项目-科学备孕与优生优育检查指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #00bfa5;
+            --primary-dark: #00897b;
+            --secondary-color: #f5f7fa;
+            --text-main: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .badge {
+            background: rgba(0, 191, 165, 0.1);
+            color: var(--primary-dark);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        main {
+            max-width: var(--container-width);
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Section Titles */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        /* Core Checklist Grid */
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .card.torches { border-top-color: #ff9800; }
+        .card.genetic { border-top-color: #9c27b0; }
+        .card.dental { border-top-color: #00bcd4; }
+        .card.vitamin { border-top-color: #4caf50; }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .card li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .card li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Detailed Info Section */
+        .info-section {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-bottom: 60px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .info-item h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-item p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .step-number {
+            background: var(--secondary-color);
+            color: var(--primary-dark);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--white);
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #fafafa;
+        }
+
+        .faq-answer p {
+            padding: 20px;
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 60px 20px 20px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">孕育<span>指南</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#core-check" class="active">核心项目</a></li>
+                    <li><a href="#process">检查流程</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta-btn">预约咨询</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>科学备孕，从<b>孕前体检项目</b>开始</h1>
+            <p>全面评估夫妻双方健康状况，排除潜在风险，为孕育健康宝宝筑牢第一道防线。专业解读备孕检查清单，助您安心迎接新生命。</p>
+            <div class="hero-badges">
+                <span class="badge">TORCH筛查</span>
+                <span class="badge">遗传病咨询</span>
+                <span class="badge">口腔检查</span>
+                <span class="badge">微量元素检测</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- 核心检查项目 -->
+        <section id="core-check">
+            <div class="section-header">
+                <h2>必做孕前检查项目清单</h2>
+                <p>根据国家卫健委建议，夫妻双方在计划怀孕前应进行至少3-6个月的全面检查</p>
+            </div>
+            
+            <div class="checklist-grid">
+                <!-- 1. 妇科基础检查 -->
+                <article class="card">
+                    <span class="card-icon">🩺</span>
+                    <h3>女性基础妇科检查</h3>
+                    <p>了解生殖系统健康状况，排查影响怀孕的疾病。</p>
+                    <ul>
+                        <li>白带常规（阴道炎筛查）</li>
+                        <li>宫颈TCT及HPV（防癌筛查）</li>
+                        <li>子宫及附件B超</li>
+                        <li>妇科内分泌激素六项</li>
+                    </ul>
+                </article>
+
+                <!-- 2. TORCH筛查 -->
+                <article class="card torches">
+                    <span class="card-icon">🦠</span>
+                    <h3>TORCH感染筛查</h3>
+                    <p>检查是否感染可能导致胎儿畸形的病原体。</p>
+                    <ul>
+                        <li>Toxoplasma (弓形虫)</li>
+                        <li>Rubella (风疹病毒)</li>
+                        <li>Others (其他病毒)</li>
+                        <li>Cytomegalovirus (巨细胞病毒)</li>
+                    </ul>
+                </article>
+
+                <!-- 3. 优生优育检查 -->
+                <article class="card genetic">
+                    <span class="card-icon">🧬</span>
+                    <h3>优生五项/优生优育检查</h3>
+                    <p>针对备孕女性的专项排查，预防遗传病和流产。</p>
+                    <ul>
+                        <li>ABO溶血检查</li>
+                        <li>甲状腺功能检查</li>
+                        <li>血型鉴定</li>
+                        <li>肝肾功能基础检查</li>
+                    </ul>
+                </article>
+
+                <!-- 4. 口腔检查 -->
+                <article class="card dental">
+                    <span class="card-icon">🦷</span>
+                    <h3>孕前口腔检查</h3>
+                    <p>孕期用药受限，孕前解决牙病尤为重要。</p>
+                    <ul>
+                        <li>龋齿及补牙</li>
+                        <li>牙周病治疗</li>
+                        <li>智齿拔除</li>
+                        <li>口腔卫生指导</li>
+                    </ul>
+                </article>
+
+                <!-- 5. 男性精液分析 -->
+                <article class="card">
+                    <span class="card-icon">🧬</span>
+                    <h3>男性精液常规分析</h3>
+                    <p>评估男性生育能力，检查精子活力与畸形率。</p>
+                    <ul>
+                        <li>精子数量</li>
+                        <li>精子活力(A级+B级)</li>
+                        <li>精子形态学分析</li>
+                        <li>精液液化时间</li>
+                    </ul>
+                </article>
+
+                <!-- 6. 营养与微量元素 -->
+                <article class="card vitamin">
+                    <span class="card-icon">💊</span>
+                    <h3>微量元素与营养评估</h3>
+                    <p>补充叶酸前必须了解的身体营养储备。</p>
+                    <ul>
+                        <li>叶酸代谢能力检测</li>
+                        <li>铁、锌、钙水平</li>
+                        <li>Vit D缺乏筛查</li>
+                        <li>体重指数(BMI)评估</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- 检查流程与注意事项 -->
+        <section id="process" class="info-section">
+            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                <h2>检查流程与注意事项</h2>
+                <p>了解正确的检查步骤和准备事项，确保体检结果准确有效。</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3><span class="step-number">1</span> 检查前准备</h3>
+                    <p><strong>时间选择：</strong>一般建议在孕前3-6个月进行检查，确保有足够时间治疗疾病或补充营养。</p>
+                    <p><strong>女性注意事项：</strong>检查前3天避免性生活，检查前24小时避免阴道冲洗或用药，月经干净后3-7天进行最佳。</p>
+                    <p><strong>男性注意事项：</strong>检查前3-5天避免排精，保持规律作息，避免熬夜和饮酒。</p>
+                </div>
+                <div class="info-item">
+                    <h3><span class="step-number">2</span> 检查流程</h3>
+                    <p><strong>夫妻同检：</strong>建议夫妻双方同时进行体检，共同评估生育风险。</p>
+                    <p><strong>建档与咨询：</strong>部分医院提供孕前优生健康检查档案，检查后需咨询医生获取个性化指导。</p>
+                    <p><strong>复查机制：</strong>对于检查结果异常的项目，应在医生指导下治疗或调理后进行复查。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section id="faq">
+            <div class="section-header">
+                <h2>孕前体检常见问题</h2>
+                <p>关于备孕检查的疑问解答</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">孕前体检需要多少钱？</div>
+                    <div class="faq-answer">
+                        <p>费用因地区、医院等级及检查项目不同而异。基础检查（血常规、尿常规等）通常在几百元左右，包含优生五项、TORCH等深度筛查的项目费用会在1000-2000元不等。部分地区有免费的国家孕前优生检查政策。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">检查结果正常就可以备孕了吗？</div>
+                    <div class="faq-answer">
+                        <p>检查结果正常是一个积极的信号，但备孕还需要考虑年龄、生活方式、环境因素等。建议在医生指导下补充叶酸，并保持健康的饮食和运动习惯。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">男性需要做哪些特殊检查？</div>
+                    <div class="faq-answer">
+                        <p>男性主要进行精液常规分析、生殖系统B超以及传染病筛查（如乙肝、梅毒等）。精液分析是评估男性生育能力最直接、最重要的指标。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">TORCH检查多久做一次？</div>
+                    <div class="faq-answer">
+                        <p>对于计划怀孕的育龄妇女，通常建议做一次全面的TORCH筛查。如果曾经感染过某种病毒且已治愈，或者处于高危环境，可咨询医生是否需要定期复查。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>孕育指南</h4>
+                <p style="color: #bdc3c7; font-size: 14px; line-height: 1.8;">
+                    专注于为备孕家庭提供科学、权威的孕前检查与优生优育知识。我们致力于帮助准父母建立健康的生育观念，降低孕期风险。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">孕前准备</a></li>
+                    <li><a href="#">产前检查</a></li>
+                    <li><a href="#">孕期营养</a></li>
+                    <li><a href="#">产后恢复</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关服务</h4>
+                <ul>
+                    <li><a href="#">医院预约</a></li>
+                    <li><a href="#">在线咨询</a></li>
+                    <li><a href="#">备孕计算器</a></li>
+                    <li><a href="#">营养食谱</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 孕前体检项目指南网 版权所有 | 内容仅供科普参考，不作为医疗诊断依据
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项状态
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
